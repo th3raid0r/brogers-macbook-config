@@ -57,6 +57,7 @@ if ! grep -Fq "$PATH_EXPORT" "$ZSHRC_FILE"; then
   echo "\n# Add Hugo binary directory to PATH" >> "$ZSHRC_FILE"
   echo "$PATH_EXPORT" >> "$ZSHRC_FILE"
   echo "Updated PATH in $ZSHRC_FILE. Please restart your terminal or run 'source ~/.zshrc' to apply the changes."
+  source ~/.zshrc
 else
   echo "$HOME/.local/bin is already in your PATH in $ZSHRC_FILE."
 fi
